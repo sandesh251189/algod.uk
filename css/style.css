@@ -1,0 +1,275 @@
+/* ----------------------------------
+
+Name: style.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+
+    01. Google font
+    02. Reset
+    03. Typography
+    04. Background color
+    05. Custom
+    06. Button
+    07. Border
+    08. Aside style
+    09. Video
+    10. Background image
+    11. Icon
+    12. Magnific popup
+    13. Header
+    14. Page title
+    15. Swiper carousel
+    16. Slider and parallax typography
+    17. Portfolio
+    18. Elements
+    19. Blog
+    20. Footer
+    21. Home page
+    22. Others
+
+*/
+/* ===================================
+    Google font
+====================================== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+	*/
+
+
+/* ===================================
+    Reset
+====================================== */
+
+body{font-family: 'Montserrat', sans-serif; font-size:14px;  font-weight: 400;line-height: 24px;}
+body, html { height: 100%; -moz-osx-font-smoothing: grayscale;}
+
+/* ===================================
+    Typography
+====================================== */
+
+
+
+/* heading */
+h1, h2, h3, h4, h5, h6 {margin:0 0 20px; padding:0; letter-spacing: 0; font-weight: bold;font-family: 'Montserrat', sans-serif; }
+h1 {font-size:70px; line-height: 70px;}
+h2 {font-size:55px; line-height:60px}
+h3 {font-size:48px; line-height:54px}
+h4 {font-size:40px; line-height:46px}
+h5 {font-size:32px; line-height:40px}
+h6 {font-size:25px; line-height:30px}
+
+/* text size */
+.text-extra-small {font-size:11px; line-height:14px}
+.text-small {font-size:12px; line-height:20px}
+.text-medium {font-size:16px; line-height:23px}
+.text-large {font-size:18px; line-height:26px}
+.text-extra-large {font-size: 20px; line-height:26px}
+.title-large {font-size: 100px; line-height:95px}
+.title-extra-large {font-size: 130px; line-height:120px}
+
+.lightGrayBg{background:#f7f6f6;}
+.lightyellowBg{background:#efdd95;}
+.lightorangeBg{background:#f9b765;}
+.skyBlueBg{background: #7abfe9}
+.yellowBg{background: #fdc84d}
+.whiteBg{background: #fff;}
+.blackBg{background: #000;}
+.grayBg{background: #333;}
+
+
+/* text transform */
+a,a:hover,a:active,a:focus{outline:none}
+.uppercase {text-transform: uppercase;}
+.lowercase {text-transform: lowercase;}
+.capitalize {text-transform: capitalize;}
+
+/* text color */
+.text-white {color:#FFF}
+.text-black {color:#000}
+.text-grayD {color:#333}
+.text-purpal {color:#692d8f}
+.text-pink {color:#bf165e}
+/* TOP HEADER */
+.header-top{border-bottom:solid 1px #eee;  }
+.header-top ul{margin:0;padding:0}
+.header-top ul li{display:inline-block;margin-right:10px;padding:5px 0;color:#666;font-size:12px;}
+.header-top ul li:last-child{margin-right:0px;}
+.social-header{margin-left:20px !important;}
+.social-header li {margin-right:0 !important}
+.social-header li a{color:#333;padding:5px;font-size:15px;}
+.social-header li a:hover{color:#35185e;line-height:20px;}
+
+
+
+
+/* Heading font size */
+.heading-70{font-size:70px;}
+.heading-50{font-size:50px;}
+.heading-45{font-size:45px;}
+.heading-40{font-size:40px;}
+.heading-35{font-size:35px;}
+.heading-30{font-size:30px;}
+.heading-25{font-size:25px;}
+.heading-20{font-size:20px;}
+
+/* Heading font style */
+.heading-light{font-weight: normal}
+.heading-bold{font-weight: bold}
+.heading-100{font-weight: 100}
+.heading-200{font-weight: 200}
+.heading-300{font-weight: 300}
+.heading-400{font-weight: 400}
+.heading-500{font-weight: 500}
+.heading-600{font-weight: 600}
+.heading-700{font-weight: 700}
+.heading-800{font-weight: 800}
+.heading-900{font-weight: 900}
+/* Line Height */
+.line-h-100{line-height:100px;}
+.line-h-90{line-height:90px;}
+.line-h-80{line-height:80px;}
+.line-h-70{line-height:70px;}
+.line-h-60{line-height:60px;}
+.line-h-55{line-height:55px;}
+.line-h-50{line-height:50px;}
+.line-h-45{line-height:40px;}
+.line-h-40{line-height:40px;}
+.line-h-35{line-height:35px;}
+.line-h-30{line-height:30px;}
+.line-h-25{line-height:25px;}
+.line-h-20{line-height:20px;}
+.line-h-15{line-height:15px;}
+.line-h-10{line-height:10px;}
+/* span disply */
+.d-block{display:block;}
+.d-inblock{display: inline-block;}
+/* Main Header And Navbar */
+.header-bottom{background:#fff}
+.navbar-default{background:#fff;border:none;}
+.navbar-default .navbar-nav .active a{background:#35185e;border-radius:8px;-web-border-radius:8px;-moz-border-radius:8px;color:#fff;padding:10px;}
+.navbar-default .navbar-nav>li{margin-left:5px;}
+.navbar-default .navbar-nav>li>a{color:#333;}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{background:#35185e;border-radius:8px;-web-border-radius:8px;-moz-border-radius:8px;color:#fff;padding:10px;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{background:#35185e;border-radius:8px;-web-border-radius:8px;-moz-border-radius:8px;color:#fff;padding:10px;}
+.navbar-default .navbar-nav>li{margin-left:5px;}
+.navbar-default .navbar-nav>li>a{padding:10px;}
+.navbar-brand{height:auto;}
+.navbar-nav{margin-top:50px;}
+.dropdown-menu{background:#74539d;color:#fff;border-radius:5px;min-width: 100px;}
+.navbar-nav>li>.dropdown-menu{padding:5px;color:#fff;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;margin-top:2px;padding:0;}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{background:#692d8f;color:#fff;}
+.dropdown-menu>li>a{padding:5px;color:#fff;font-size:12px;}
+/* Case Study Parallax */
+.case-study{margin-top:60px}
+.parallax-window{min-height:500px; position: relative;}
+.case-logo-parallax{float:right;width:200px;padding:20px;}
+.case-logo-parallax img{width:100%}
+.parallax-overlay{background:rgba(0,0,0,0.5);position: absolute;top:0;left:0;height: 100%;width:100%;z-index: 2}
+.parallax-window .container{z-index:3;position: relative;}
+.case-content-parallax h1{color:#fff;text-align:center;font-size:25px;margin:0;line-height:50px;text-transform: uppercase;}
+.case-content-parallax p{color:#fff;text-align:center;font-size:20px;}
+.case-link-parallax{text-align: center;margin-top:85px;}
+.case-link-parallax a{display:inline-block;padding:10px 30px;background:rgba(255,255,255,0.9);min-width:150px; text-align:center;color:#333;text-decoration: none;font-size:20px;text-transform: uppercase;margin:0 auto;}
+/* Work Slider  */
+.work-des{background:#fff;padding:10px;}
+.work-des h3{font-size:30px;font-weight:500;;margin:0;font-family: 'Montserrat', sans-serif;}
+.work-des p{font-size:15px;font-weight:500;;margin:0;font-family: 'Montserrat', sans-serif;}
+/* Case Slider  */
+.case-des{background:#fff;padding:10px;}
+.case-des h3{font-size:15px;font-weight:500;;margin:0;font-family: 'Montserrat', sans-serif;}
+.case-des p{font-size:15px;font-weight:500;;margin:0;font-family: 'Montserrat', sans-serif;}
+/* About on Home Page */
+.about-text{margin-top:60px}
+
+.about-text h3{font-size:35px;font-weight:500;line-height: 50px}
+.about-text h2{font-size:41px;font-weight:normal;line-height: 50px}
+.about-text p{font-size:20px;font-weight:normal;line-height:30px}
+/* Client Slider Section */
+.clients{margin-top:60px;}
+.clients .title{background:#ffd45c;color:#333;text-transform: uppercase;text-align:center;font-size:30px;}
+/* CSS For Equal Height Div */
+.col-fixed-hd,.col-fixed-landscape,.col-fixed-square,.col-fixed-portrait,.col-fixed-50,.col-fixed-tall{position:relative}
+.col-fixed-hd:before,.col-fixed-landscape:before,.col-fixed-square:before,.col-fixed-portrait:before,.col-fixed-50:before,.col-fixed-tall:before{content:"";display:block}
+.col-fixed-hd .col-content,.col-fixed-landscape .col-content,.col-fixed-square .col-content,.col-fixed-portrait .col-content,.col-fixed-50 .col-content,.col-fixed-tall .col-content{position:absolute;top:0px;right:00px;bottom:0px;left:0;padding:0px}
+.col-fixed-50:before{margin-top:50%}
+.col-fixed-hd:before{margin-top:56.25%}
+.col-fixed-landscape:before{margin-top:75%}
+.col-fixed-square:before{margin-top:100%}
+.col-fixed-tall:before{margin-top:115%}
+.col-fixed-portrait:before{margin-top:133.33333333%}
+@media (max-width: 1150px) and (max-width: 900px){
+.page-template-what-we-do-template .col-md-4{width:100%}}
+.page-template-about-template .col-group .col-md-4 .col-content .text-content,.single-portfolio .col-group .col-md-4 .col-content .text-content{font-size:1.3em
+}
+.page-template-about-template .col-group .col-md-4 .col-content .text-content h3,.single-portfolio .col-group .col-md-4 .col-content .text-content h3{font-size:2em}
+@media (max-width: 767px){
+.page-template-contact-template .addressestext .col-md-4{padding-bottom:24px;border-bottom:1px solid #161615;max-width:88%;margin:0 auto}
+.page-template-contact-template .addressestext .col-md-4:last-child{border-bottom:none}
+   }
+.our-clients .col-md-4{
+   background-color:#fc0f3a
+}
+@media (max-width: 767px){
+.getInTouch .addressestext .col-md-4{padding-top:20px;border-bottom:1px solid white}
+.getInTouch .addressestext .col-md-4:last-child{border-bottom:none}
+}
+.col-md-4{padding-left:10px;padding-right:10px;width:33.33333333%;float:left}
+div .col-content .hover-image{position:absolute;left:0;top:0;width:100%; height:100%;z-index:1;background-size:cover;background-position:center center}
+img{max-width:100% ;display:block;width:auto;height:auto;text-decoration:none;border:0}
+.paddedbox{padding:2.0em !important;height:100%}
+#outer-wrap{position:relative}
+.table{display:table;height:100%;width:100%}
+.align{display:table-cell;vertical-align:middle}
+.col-group [class*="col-"]{min-height:1px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:0 !important;padding-right:0 !important}
+@media (max-width: 767px){
+  .col-group [class*="col-"]{width:100%;padding-left:0px;padding-right:0px}
+
+}
+.sliderContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; // to avoid scrollbars
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sliderContainer {
+    height: 100vh;
+    position: relative;
+          cursor:none!important;
+  }
+
+  #full-width-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 50px;
+    /* height of thumbs (if not required set to 0) */
+    height: auto;
+    /* optionally add !important for WP version */
+    width: auto;
+      cursor:none!important;
+  }
+
+
+  .cursor {
+  background:url(../images/cursor-left.png)no-repeat;
+  width:33px;
+  height:54px;
+    position:fixed;
+  z-index:9999;
+display: none
+transition:transform .4s ease-out;
+
+   }
+   .grab-cursor{  cursor:none!important;}
